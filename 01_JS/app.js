@@ -3,13 +3,12 @@
 const titulo = document.querySelector('#titulo') 
 const lista = document.querySelector("#lista-lugares")
 const boton = document.querySelector("#btn-agregar")
-console.log(titulo.textContent)
+console.log(titulo)
 
 //EJERCICIO 2
 //seleccionamos la clase lugar
 const lugares = document.querySelectorAll(".lugar")
-//ccreo una variable para la lista
-let num=1
+
 //veo cada uno de los li, los imprimo y aumento el numero
 lugares.forEach( (li, i) => {
   console.log(`${i + 1}: ${li.textContent}`)
@@ -22,4 +21,11 @@ const cafeteriaFavorita = document.querySelectorAll(".cafeteria.favorito")
 const buscador = document.querySelector("input[type='text']")
 
 //EJERCICIO 4
+const footer = document.querySelector('#footer')
+if(footer){
+  console.log("Se encontro")
+}else{
+  console.log("No se encontro el elemento")
+}
+
 
